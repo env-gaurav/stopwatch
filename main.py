@@ -1,8 +1,11 @@
-import time 
+import time
+
 def timer(n):
   while 0<n:
-      time.sleep(2)
-      print("Time left: ",n,"seconds left")
+      time.sleep(1)
+      print("Time left:",n,"seconds left")
       n-=1
+  print("Time's Up")
       
-timer(10)
+seconds=int(input("Enter Number In Seconds: "))
+timer(seconds)
