@@ -7,5 +7,8 @@ def timer(n):
       n-=1
   print("Time's Up")
       
-seconds=int(input("Enter Number In Seconds: "))
-timer(seconds)
+try:
+   seconds=int(input("Enter Number In Seconds: "))
+   timer(seconds)
+except:
+   print("Invalid Input")
